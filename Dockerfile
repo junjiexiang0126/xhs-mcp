@@ -20,7 +20,7 @@ ENV npm_config_python=/usr/bin/python3
 
 COPY package.json package-lock.json ./
 
-RUN npm ci
+RUN npm install
 
 COPY . .
 
